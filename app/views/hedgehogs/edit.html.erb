@@ -1,0 +1,18 @@
+<h1> Update hedgehog: </h1>
+
+<h2> <%= form_tag '/hedgehogs/<%= @hedgehog["id"]%>' do %>
+    <%= label_tag :first_name %>
+    <%= text_field_tag :first_name %>
+
+    <%= label_tag :age %>
+    <%= text_field_tag :age %>
+
+    <%= label_tag :color %>
+    <%= text_field_tag :color %>
+
+    <%= label_tag :favorite_food %>
+    <%= text_field_tag :favorite_food %>
+
+    <%= submit_tag "Create Hedgehog" %>
+<% end %>
+</h2>
