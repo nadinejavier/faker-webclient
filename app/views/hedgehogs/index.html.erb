@@ -1,1 +1,14 @@
-<%= @hedgehog %> 
+<h1> All hedgehogs: </h1>
+<h2>
+<% @hedgehogs.each do |hedgehog| %>
+  <%= hedgehog["first_name"] %> 
+  <br>
+  <%= hedgehog["age"] %> 
+  <br>
+  <%= hedgehog["color"] %> 
+  <br>
+  <%= hedgehog["favorite_food"] %> 
+  <br>
+  <br>
+<% end %>
+</h2>

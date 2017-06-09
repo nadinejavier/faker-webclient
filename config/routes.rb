@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get '/hedgehogs/:id' => 'hedgehogs#show'
   get '/hedgehogs/:id/edit' => 'hedgehogs#edit'
   patch '/hedgehogs/:id' => 'hedgehogs#update'
+  delete '/hedgehogs' => 'hedgehogs#destroy'
 end
